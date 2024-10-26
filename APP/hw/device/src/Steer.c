@@ -50,7 +50,7 @@ void steer_joy(){
 				st_back_stop(1, 1);
 			}
 		    else{
-		    	pwm_con(1000, 500 + (1000-value_x_div));
+		    	pwm_con(1000, 500 + (500-value_x_div));
 		    	steer_right_left_stop(0, 1);
 		    }
 		}
@@ -59,7 +59,7 @@ void steer_joy(){
 				st_back_stop(1, 1);
 			}
 		    else {
-		    	pwm_con(1000, 500 + (1000-value_y_div));
+		    	pwm_con(1000, 500 + (500-value_y_div));
 		    	st_back_stop(1, 0);
 		    }
 		}
@@ -75,7 +75,7 @@ void steer_joy(){
 	}
 	else if (value_y <= 2500){
 		if(value_x <= 1500){
-		    	pwm_con(1000, 500 + (1000-value_x_div));
+		    	pwm_con(1000, 500 + (500-value_x_div));
 		    	steer_right_left_stop(0, 1);
 		}
 		else if (value_x <= 2500){
@@ -89,7 +89,7 @@ void steer_joy(){
 	}
 	else if (value_y <= 4096){
 		if(value_x <= 1500){
-		    	pwm_con(1000, 500 + (1000-value_x_div));
+		    	pwm_con(1000, 500 + (500-value_x_div));
 		    	steer_right_left_stop(0, 1);
 		}
 		else if (value_x <= 2500){
